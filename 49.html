@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>49) Elabore um algoritimo em pseudocodigo que efetue a leitura de um valor que esteja entre a faixa de 1 a 9. Após a leitura
+        do valor fornecido pelo usuário, o programa deverá indicar uma de duas mensagens: "O valor está na faixa permitida", caso o usuário
+        forneça o valor nesta faixa, ou a mensagem " O valor está fora da faixa permitida", caso o usuário forneça valores menores
+        que 1 ou maiores que 9.</h2>
+
+    <label>Digite um número</label>
+    <input type="text" id="valor">
+    <button onclick="verificar()">Ok</button>
+
+    <div id="saida"></div>
+</body>
+</html>
+    <script>
+        function verificar(){
+            var num = document.querySelector("#valor").value;
+            if(num <= 9 && num >=1 ){
+                //console.log("VP");
+                //alert("VP");
+                //document.write("VP");
+                document.querySelector("#saida").innerHTML = "<p> O valor está na faixa permitida</p>";
+                //saida("<p> O valor está na faixa permitida</p>");
+            }else {
+                //console.log("VNP");
+                //alert("VNP");
+                //document.write("VNP");
+                document.querySelector("#saida").innerHTML = "<b><p> O valor está fora da faixa permitida </b>";
+                //saida("<p> O valor está fora da faixa permitida</p>");
+            }
+        } 
+
+        //function saida(texto, local){
+          //  document.querySelector(local).innerHTML = texto;
+        //}   
+    </script>

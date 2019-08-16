@@ -1,0 +1,40 @@
+JS 48
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>48) Eleborar um algoritimo em pseudocodigo que efetue a leitura de um número inteiro e apresentar uma mensagem
+    informando se o número é par ou impar</h2>
+
+    <label>Digite um número</label>
+    <input type="text" id="valor">
+    <button onclick="parImpar()">Ok</button>
+
+    <div id="saida"></div>
+</body>
+</html>
+    <script>
+        function parImpar(){
+            var num = document.querySelector("#valor").value;
+            if(num % 2 == 0){
+                //console.log("Par");
+                //alert("Par");
+                //document.write("Par");
+                document.querySelector("#saida").innerHTML = "<p> PAR </p>";
+            }else {
+                //console.log("Impar");
+                //alert("Impar");
+                //document.write("Impar");
+                document.querySelector("#saida").innerHTML = "<b><p> IMPAR </b>";
+            }
+        }    
+    </script>
+
+
+
