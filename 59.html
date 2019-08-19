@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p> Professor 1<input type="number" id = "n1" placeholder="hora de trabalho"> <p> Salário do professor 1 <input type="number" id = "trabalho1" placeholder="Valor do salario" disabled="disabled"></P>
+    <P> Professor 2<input type="number" id = "n2" placeholder="hora de trabalho"> <p> Salário do professor 2 <input type="number" id = "trabalho2" placeholder="Valor do salario" disabled="disabled"></P></p>
+    <p><button onclick="calcula()">OK</button></p>
+
+    trabalhou mais tempo <input type="text" id = "trabalhoumaistempo"></p>
+    trabalhou menos tempo <input type="text" id = "trabalhoumenostempo">
+
+    <div id = "saida"></div>
+</body>
+
+        <script>
+                function calcula(){
+                    let num1 = document.getElementById("n1").value;
+                    let num2 = document.getElementById("n2").value;
+                    let num3 = num1 * "24.50";
+                    let num4 = num2 * "24.50";
+                    if(num3 > num4){
+                            document.getElementById("trabalho1").value = num3;
+                            document.getElementById("trabalhoumaistempo").value = 'professor 1';
+                            document.getElementById("trabalho2").value = num4;
+                            document.getElementById("trabalhoumenostempo").value = 'professor 2';
+                    }else{
+                        document.getElementById("trabalho2").value = num4;
+                        document.getElementById("trabalhoumaistempo").value = 'professor 1';
+                        document.getElementById("trabalho1").value = num3;
+                        document.getElementById("trabalhoumenostempo").value = 'professor 2';
+                    }
+
+                
+                function saida(texto){
+                    document.querySelector("#saida").innerHTML = texto;
+                }
+
+                }
+
+        </script>
+</html>
