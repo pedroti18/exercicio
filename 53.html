@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>53) Fazer um algoritmo em pseudocodigo para ler quatro valores referentes a quatro notas
+        escolares de um aluno e imprimir uma mensagem dizendo que o aluno foi aprovado, se o valor
+        da média escolar for maior ou igual a 5. Se o aluno não foi aprovado, indicar uma mensagem
+        informando esta condição. Apresentar junto com uma das mensagens o valor da média do
+        aluno para qualquer condição.</h2>
+
+
+    <div id="saida"></div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+    var media, n1, n2, n3, n4 ;
+    
+    n1= prompt ("Informe a primeira nota: ") ;
+    n1= eval (n1) ;
+    
+    n2= prompt ("Informe a segunda nota: ") ;
+    n2= eval (n2) ; 
+    
+    n3= prompt ("Informe a terceira nota: ") ; 
+    n3= eval (n3) ;
+
+    n4= prompt ("Informe a quarta nota: ") ; 
+    n4= eval (n4) ;
+    
+    media = (n1 + n2 + n3 + n4)/4 ; 
+    
+    if ( media >= 5 ) {
+    document.write ("Aprovado: media  " +  media);
+    
+    } else {
+        document.write ("Reprovado: media " +  media);
+  
+    
+    }
+    
+    </script> 
+
+
+
