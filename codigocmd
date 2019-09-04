@@ -14,3 +14,6 @@ git push origin master -F -u
 git add .
 git commit -m "exercicio atualizados"
 git push origin master
+
+npm install
+json-server -w db.json
