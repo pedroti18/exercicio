@@ -32,6 +32,13 @@ firebase init
 firebase deploy
 
 --
+npm i -g ionic
+ionic -v (para ver a versão)
+ionic start
+- tabs
+ionic serve
+
+--
 
 firebaseConfig: {
     apiKey: "AIzaSyBIIa2ce3nVJ8mwu27cu45aXc6EKaHYFSE",
