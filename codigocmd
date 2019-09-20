@@ -22,6 +22,7 @@ npm install
 json-server -w db.json
 
 --
+npm i firabase @angular/firebase-tools --save
 npm install -g firebase-tools
 
 firebase login
