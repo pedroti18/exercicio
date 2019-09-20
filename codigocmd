@@ -9,6 +9,7 @@ git commit
 git push origin master
 git push origin master -F -u
 git push origin master --Force
+git remote rm origin ( remover origin )
 
 --
 
